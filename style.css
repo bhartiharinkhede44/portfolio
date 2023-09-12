@@ -1,52 +1,66 @@
-.nav-container{
+.nav-container {
     padding: 15px;
     background-color: #444;
-    top: 0 ;
+    top: 0;
     left: 0;
     right: 0;
     text-align: center;
     width: 100%;
     position: fixed;
 }
-.nav-achor{
+
+.nav-achor {
     text-decoration: none;
     color: #fff;
     padding: 15px;
     font-size: 20px;
 }
-.nav-achor:hover{
-   background-color:#444;
+
+.nav-achor:hover {
+    background-color: #444;
 }
-.user-info{
+
+.user-info {
     text-align: center;
-    padding :70px;
+    padding: 70px;
     display: flex;
     justify-content: space-around;
 }
-.user-img{
+
+.user-img {
     height: 250px;
     border-radius: 50%;
+    box-shadow: #444;
 
 }
-.tagline{
+
+.tagline {
     font-size: medium;
     text-decoration: none;
 }
-.html-img{
+
+.html-img {
     height: 50px;
 }
-.container{
-    padding:30px ;
-    
+
+.container {
+    padding: 30px;
+
 
 
 }
-.port-infomation{
+
+.text {
+    text-align: center;
+}
+
+.port-infomation {
     display: flex;
-    
+
 }
-.about{
-    height: 450px;
+
+.about {
+    height: 250px;
     width: 600px;
     padding: 20px;
     margin: 20px;
@@ -54,10 +68,11 @@
     border-radius: 10px;
     margin left: auto;
     margin right: auto;
-    box-shadow:2px 2px 6px gray;
+    box-shadow: 2px 2px 6px gray;
 }
-.contact{
-    height: 450px;
+
+.contact {
+    height: 250px;
     width: 600px;
     padding: 20px;
     margin: 20px;
@@ -65,39 +80,173 @@
     border-radius: 10px;
     margin left: auto;
     margin right: auto;
-    box-shadow:2px 2px 6px gray;  
+    box-shadow: 2px 2px 6px gray;
 }
-.social-media{
+
+.social-media {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
+.abouthead {
+    font-size: large;
+    font-weight: 100p;
+}
 
-.social-logo{
-    height: 50px; 
+
+.social-logo {
+    height: 50px;
     margin: 10px;
 }
-.project-head{
+
+.project-head {
     text-align: center;
 }
-.project-container{
+
+.project-container {
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
+    flex-wrap: wrap;
 }
 
+.projectcard {
 
-@media only screen  and  (max-width: 600px) {
-  .user-info{
-    flex-direction: column;
+    height: 550px;
+    width: 600px;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin left: auto;
+    margin right: auto;
+    box-shadow: 2px 2px 6px gray;
+
+}
+
+.project-img {
+    height: 300px;
+    width: 500px;
+    margin-left: 50px;
+}
+
+.projectbtn {
+    padding: 8px;
+    border-radius: 2px;
+    color: #444;
+    background-color: azure;
+    font-size: large;
+    font-weight: 200;
+    margin-left: 80px;
+
+    text-decoration: none;
+    border: solid;
+
+}
+
+.projectbtn:hover {
+    padding: 8px;
+    border-radius: 2px;
+    color: #444;
+    background-color: azure;
+    font-size: large;
+    font-weight: 200;
+    margin-left: 80px;
+
+    text-decoration: none;
+    border: solid;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.projectbtn:hover {
+    background-color: #444;
+    color: white;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.footercontainer {
+    background-color: #080707;
+    color: #fff;
+    height: 170px;
     align-items: center;
-  }
-  .user-img{
-    flex-direction: column;
-    align-items: center;
-  }
+    display: flex;
+    flex-wrap: wrap;
 
 
 
+
+}
+
+.footename {
+    padding-left: 25px;
+}
+
+.footerhead {
+    text-decoration: none;
+    color: #fff;
+    padding-left: 25px;
+
+}
+
+.nametag {
+    margin-left: 300px;
+}
+
+.contactfooter {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 350px;
+}
+
+@media only screen and (max-width: 600px) {
+    .user-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user-img {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .port-infomation {
+        flex-direction: column;
+    }
+
+    .project-container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footercontainer {
+        height: auto;
+        flex-direction: column;
+
+        align-items: start;
+        padding: 20px 5px;
+    }
+
+    .footename {
+        padding-left: 25px;
+    }
+
+    .footerhead {
+
+        padding-left: 0px;
+
+    }
+
+    .nametag {
+        margin-left: 0px;
+    }
+
+    .contactfooter {
+
+        margin-left: 0px;
+    }
 }
